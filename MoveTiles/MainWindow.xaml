@@ -1,0 +1,68 @@
+﻿<Window x:Class="MoveTiles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoveTiles"
+        mc:Ignorable="d"
+        Title="JUST DRAG THE TILE WHERE YOU WANT" Height="450" Width="800"        
+        >
+    <DockPanel
+        x:Name="dp"
+        >
+        <Grid     
+            x:Name="gridForTile"
+            d:Height="400"
+            DockPanel.Dock="Top"
+            ShowGridLines="True"   
+            >
+            
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Rectangle
+                Grid.RowSpan="5"
+                Grid.ColumnSpan="5"
+                Stroke="Gray"
+                StrokeThickness="2"
+                >
+            </Rectangle>
+            
+            <Label
+                x:Name="tileWithText"
+                BorderBrush="Coral"
+                BorderThickness="10"
+                Background="Aquamarine"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center" FontFamily="Impact" FontSize="36"
+                MouseLeftButtonDown="tileWithText_MouseLeftButtonDown"
+                MouseLeftButtonUp="tileWithText_MouseLeftButtonUp"
+                >
+                DRAG ME
+            </Label>
+        </Grid>
+
+        <StackPanel
+            DockPanel.Dock="Bottom"
+            Height="30"
+            Orientation="Horizontal"            
+            >
+            <TextBlock Text="X="/>
+            <TextBlock x:Name="xPosition"/>
+            <TextBlock Text="; Y="/>
+            <TextBlock x:Name="yPosition"/>            
+        </StackPanel>
+    </DockPanel>
+</Window>

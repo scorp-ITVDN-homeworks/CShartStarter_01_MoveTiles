@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoveTiles", "MoveTiles\MoveTiles.csproj", "{B44BE901-894F-4ACC-8622-C2883B427DA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B44BE901-894F-4ACC-8622-C2883B427DA6}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{B44BE901-894F-4ACC-8622-C2883B427DA6}.Debug|x64.ActiveCfg = Debug|x64
+		{B44BE901-894F-4ACC-8622-C2883B427DA6}.Debug|x64.Build.0 = Debug|x64
+		{B44BE901-894F-4ACC-8622-C2883B427DA6}.Release|Any CPU.ActiveCfg = Release|x64
+		{B44BE901-894F-4ACC-8622-C2883B427DA6}.Release|x64.ActiveCfg = Release|x64
+		{B44BE901-894F-4ACC-8622-C2883B427DA6}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB3843C8-56A6-41E2-8870-10D8C852FF6D}
+	EndGlobalSection
+EndGlobal
